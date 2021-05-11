@@ -1,10 +1,12 @@
 const SingleFile = require('../models/singleFile');
-
+var cloudinary = require('./../helpers/cloudinary');
 const singleFileUpload = async (req, res, next) => {
 	try {
+		const result = await cloudinary.uploader.upload(req.file.path);
+
 		const file = new SingleFile({
-			fileName: req.file.originalname,
-			filePath: req.file.path,
+			fileName: result.original_filename,
+			filePath: result.secure_url,
 			fileUrl: req.body.title,
 			filter: req.body.filter,
 		});
@@ -13,7 +15,7 @@ const singleFileUpload = async (req, res, next) => {
 
 		res.status(201).send('File Uploaded Successfully');
 	} catch (error) {
-		res.status(400).send(error.message);
+		res.status(400).json(error.message);
 	}
 };
 

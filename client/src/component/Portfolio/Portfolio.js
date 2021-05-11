@@ -10,7 +10,6 @@ const Portfolio = () => {
 
 	const [singleFiles, setSingleFiles] = useState([]);
 
-	let domain = 'http://localhost:8080/';
 	useEffect(() => {
 		getSingleFiles().then((fileslist) => {
 			tag === 'all'
@@ -76,10 +75,9 @@ const Portfolio = () => {
 										<div
 											className='col-md-4 mb-3'
 											key={index}>
-											<a
-												href={`${domain}${file.filePath}`}>
+											<a href={`${file.filePath}`}>
 												<img
-													src={`${domain}${file.filePath}`}
+													src={`${file.filePath}`}
 													className='img-fluid rounded shadow img-responsive'
 													height='200'
 													alt={`${file.fileName}`}
