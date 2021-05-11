@@ -14,7 +14,7 @@ const loginController = async (req, res) => {
 		const payload = {
 			id,
 		};
-		const token = jwt.sign(payload, 'mynameisdilkashshaikhmahajan', {
+		const token = jwt.sign(payload, process.env.jwt_key, {
 			expiresIn: '1d',
 		});
 		res.cookie('jwttoken', token, {
