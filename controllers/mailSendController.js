@@ -10,8 +10,8 @@ const mailSendController = (req, res) => {
 
 			// authenticate
 			auth: {
-				user: 'dilkashshaikhshahagirmahajan@gmail.com',
-				pass: 'Dilkashkirana786@',
+				user: process.env.gmail_username,
+				pass: process.env.gmail_password,
 			},
 		});
 		//2 define the mailoptions
@@ -21,17 +21,17 @@ const mailSendController = (req, res) => {
 			subject: `Message from ${data.name}`,
 			html: `
     
-    <h3>Informations</h3>
-    <ul>
-    <li>Name: ${data.name}</li>
-    <li>Email: ${data.email}</li>
-   
-    </ul>
-    <h3>Message</h3>
-    <p>${data.comment}</p>
-    
-    
-    `,
+			    <h3>Informations</h3>
+			    <ul>
+			    <li>Name: ${data.name}</li>
+			    <li>Email: ${data.email}</li>
+
+			    </ul>
+			    <h3>Message</h3>
+			    <p>${data.comment}</p>
+
+
+			    `,
 		};
 
 		// 3.send the message with sendmail
