@@ -5,7 +5,7 @@ const connectDB = async () => {
 		//database Name
 		const databaseName = 'EmployeeDatabase';
 		const con = await mongoose.connect(
-			`mongodb+srv://dilkash786:dilkash786@schoolmanagement.pcb6g.mongodb.net/portfolio?retryWrites=true&w=majority`,
+			process.env.mongoDb_URL,
 			{
 				useNewUrlParser: true,
 				useUnifiedTopology: true,
