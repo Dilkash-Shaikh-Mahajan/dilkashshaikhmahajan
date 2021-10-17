@@ -23,10 +23,8 @@ const Home = () => {
 									steps={[
 										'FrontEnd Developer 💻',
 										1000,
-										'BackEnd Developer 👨‍💻',
-										2000,
 										'FullStack Developer 🌏',
-										3000,
+										2000,
 									]}
 									loop={Infinity}
 									wrapper='b'
@@ -35,9 +33,7 @@ const Home = () => {
 						</div>
 						<div className='desc mt-3'>
 							<p className='text-white'>
-								I'm 21 years old creative web designer,
-								specialized in User Interface Design and
-								Development.
+								I'm 21 years old A MERN 💻 Stack Developer and Cricker Lover🏏
 							</p>
 						</div>
 
