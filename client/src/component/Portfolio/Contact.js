@@ -85,10 +85,10 @@ const Contact = () => {
 													<i className='fas fa-envelope'></i>{' '}
 													Mail:
 													<a
-														href='mailto:me@dilkashshaikhmahajan.co.in '
+														href='mailto:dilkashmahajan8@gmail.com '
 														className='text-muted'>
 														{' '}
-														me@dilkashshaikhmahajan.co.in
+														dilkashmahajan8@gmail.com
 													</a>
 												</p>
 											</div>

@@ -19,6 +19,24 @@ const Experience = () => {
 								Professional Experience
 							</h3>
 							<div className='portfolio-item'>
+								<h4>Junior Full Stack Developer</h4>
+								<h5>Oct/2021 - Present</h5>
+								<p>
+									<em>3 Minds Digital </em>
+								</p>
+
+								
+							</div>
+							<div className='portfolio-item'>
+								<h4>React JS Developer</h4>
+								<h5>Aug/2021 - Sep/2021</h5>
+								<p>
+									<em>Atulaey </em>
+								</p>
+
+								
+							</div>
+							<div className='portfolio-item'>
 								<h4>Web Developer</h4>
 								<h5>Oct/2020 - Nov/2020</h5>
 								<p>

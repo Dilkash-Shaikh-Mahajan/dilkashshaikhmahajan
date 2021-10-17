@@ -7,7 +7,7 @@ const Home = () => {
 				style={{ backgroundImage: 'url(/Images/bgi.jpg)' }}
 				className='home-area'>
 				<div className='container '>
-					<div className='home-content mt-15 flex-column d-flex justify-content-center'>
+					<div className='home-content mt-24 flex-column d-flex justify-content-center'>
 						<div>
 							<h6 className='hello text-white'>
 								Hello <span>Everyone!</span>
@@ -43,7 +43,9 @@ const Home = () => {
 
 						<div className='hire mt-3'>
 							<a
-								href='http://bit.ly/3brf0TV'
+								href='https://swarajyaus.herokuapp.com/Pk8kSV5b_'
+								target="_blank"
+
 								className='btn-hire mr-5'>
 								Hire Me{' '}
 								<i className='fas fa-long-arrow-alt-right'></i>
