@@ -1,7 +1,7 @@
 import React from 'react';
 import Social from './Common/Social';
 import ProgressLine from './Common/ProgressLine';
-
+import Ads from "../Ads"
 const About = () => {
 	return (
 		<>
@@ -81,6 +81,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
+					<Ads/>
 				</div>
 			</section>
 
