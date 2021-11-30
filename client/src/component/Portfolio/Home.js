@@ -38,14 +38,14 @@ const Home = () => {
 						</div>
 
 						<div className='hire mt-3'>
-							<a
+							{/* <a
 								href='https://swarajyaus.herokuapp.com/Pk8kSV5b_'
 								target="_blank"
 
 								className='btn-hire mr-5'>
 								Hire Me{' '}
 								<i className='fas fa-long-arrow-alt-right'></i>
-							</a>
+							</a> */}
 							<a
 								href='https://api.whatsapp.com/send?phone=919325696751&text=Hello%2C%20Dilkash.'
 								className='btn-hire'>
